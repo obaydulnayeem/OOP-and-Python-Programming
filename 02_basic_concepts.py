@@ -98,9 +98,86 @@
 # count = len([34, 65])
 # print(highest, smallest, count)
 
-""" MODULES ======================================================== """
+""" MODULES ======================================================================================== """
 # from external_file_name import * # to import all from the file
 # from external_file_name import function_name # to import only a function 
 # from external_file_name import function_name as new_function_name # to import a function as modified function name 
 
 
+""" LIST (array / collection) ======================================================================"""
+# # https://docs.python.org/3/tutorial/datastructures.html
+
+# # index:    0   1     2   3    4    5    6    7    8    9   10   11   12   13 
+# numbers = [45,  64,  74,  8,  95,  34,  67,  78,  34,  23,  67,  89,  56,  23]
+# # index:  -14  -13   -12 -11  -10  -9   -8   -7   -6   -5   -4   -3   -2   -1
+
+# print(numbers[3], numbers[-3])
+
+# # list( start : end )
+# print(numbers[2:6])
+
+# # list( start : end : step )
+# print(numbers[1:7:1])
+# print(numbers[1:7:2])
+# print(numbers[2:7:-1]) # not works, cause 2 index theke 7 index projonto jaowa jay na
+# print(numbers[7:2:-1]) # 7 index theke ulta dik theke 2 index projonto 
+# print(numbers[7:2:-2]) # 7 index theke ulta dik theke 2 index projonto akta akta bad diye 
+# print(numbers[4:]) # 4 index theke baki shob
+# print(numbers[:5]) # 5 index er ag projonto shobgula
+# print(numbers[:]) # shuru theke shesh shob / copy a list
+# print(numbers[::-1]) # shesh theke shuru / reverse the full array
+
+""" more about LIST ======================================================================================"""
+# numbers = [12, 43, 65, 85]
+# numbers.append(56)
+# print(numbers)
+
+# numbers.insert(2, 71) #insert(index, value)
+# print(numbers)
+
+# numbers.remove(65)
+# print(numbers)
+
+# if 9 in numbers:
+#     numbers.remove(9)
+# print(numbers)
+
+# last = numbers.pop()
+# print(last, numbers)
+
+# index = numbers.index(71)
+# print(index)
+
+# if 3 in numbers:
+#     ind = numbers.index(3)
+#     print(ind)
+
+# sorted = numbers.sort()
+# print(numbers)
+
+""" LIST comprehension / advanced =============================================================================="""
+# numbers = [45, 64, 26, 73, 85, 34, 74, 34, 23, 56]
+# odds = []
+# for num in numbers:
+#     if num % 2 == 1 and num % 5 == 0:
+#         odds.append(num)
+
+# print(odds)
+
+# odd_nums = [num for num in numbers if num % 2 == 1 if num % 5 == 0]
+# print(odd_nums)
+
+#------------------------------------------------------------------------
+# players = ['sakib', 'musfik', 'mustafiz']
+# ages = [34, 35, 36]
+
+# age_comb = []
+# for player in players:
+#     print('player:', player)
+#     for age in ages:
+#         print(player, age)
+#         age_comb.append([player, age])
+# print(age_comb)
+
+# age_comb2 = [[player, age] for player in players for age in ages]
+# print(age_comb2)
