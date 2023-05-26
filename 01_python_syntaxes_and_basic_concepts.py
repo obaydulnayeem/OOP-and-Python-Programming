@@ -12,8 +12,8 @@
 
 
 """ PRINT=========================="""
-#print('kopa python kopa')
-#print(4534)
+# print('kopa python kopa')
+# print(4534)
 
 
 """ VARIABLE======================="""
@@ -44,6 +44,59 @@ Alt + Shift + A --> multi line / doc string
 # text = f"Kodom Ali {age} living in {district}. Interesting with rate {interest_rate}%"  # fstring
 # print(text)
 
+#---------------------------------------------------------------------------------------------------
+# name1 = 'Sakib\'s Khan' # escape -> \
+# name2 = "Sakib Khan"
+# # multiline string
+# name3 = """   
+#     Sakib Khan
+#     Number One
+# """
+# # print(name1)
+
+# for char in name2:
+#     print(char)
+
+# print(name2[3])
+# print(name2[1:6])
+# print(name2[-3])
+# print(name2[::-1])
+
+# name2[0] = 'R' # not possible
+
+# if 'Khan' in name2:
+#     print('exists')
+
+#--------------------------------------
+# string is a sequence of characters
+# mutable -> changeable
+# immutable -> we can not change it
+
+""" TOUPLE ============================================================================= """
+# touble kichu 'list' er kachakachi
+# list er khetre generally same type data rakhe. jemon int er list, string er list, bool er list
+    # but touple er khetre mix type er data rakhe.
+# function theke ekadhik jinish return korte gele kaje lage.
+
+# def multiple():
+#     return 3, 4
+# # print(multiple())  # touble -> (), list -> []
+# things = 'pen', 'tripod', 'water bottle', 'charger', 'phone', 'web cam', 'sunglass'
+# # print(things)
+# # print(type(things))
+# # print(things[0])
+# # print(things[-2])
+# # print(things[3:6])
+
+# if 'phone' in things:
+#     print('exists')
+
+# for item in things:
+#     print(item)
+
+# things[0] = 'wagon' # not possible
+
+
 
 """ INPUT==================================================================="""
 # print('Now I need money')
@@ -62,6 +115,9 @@ Alt + Shift + A --> multi line / doc string
 # print("Money I got from kodom", first_money, 'and from peyara', second_money)
 # total = first_money_int + second_money_int
 # print('Total Money I got: ', total)
+
+# OTHERS----------------------------------------------
+# a, b = map(int, input().split()) # input sample: 3 5
 
 
 """ OPERATORS====================================================================="""
@@ -90,7 +146,7 @@ Alt + Shift + A --> multi line / doc string
 #     print('koto beshi ke jane')
 # elif a > 2: # not available: else if
 #     print('Olpo boro')
-# else: 
+# else:
 #     print('chuti chuti rate lombi hoye')
 
 # boss = False
@@ -359,3 +415,85 @@ Alt + Shift + A --> multi line / doc string
 
 # age_comb2 = [[player, age] for player in players for age in ages]
 # print(age_comb2)
+
+""" SET ================================================================================================= """
+# set: unique items collection
+
+# list --> []
+# touple --> ()
+# set --> {}
+
+# numbers = [12, 56, 65, 23, 12, 65]
+# print(numbers)
+# numbers_set = set(numbers)
+# print(numbers_set)
+# numbers_set.add(55) # randomwise jekono index e add hote pare
+# print(numbers_set)
+# # print(numbers_set[2]) # not possible
+# # numbers_set[1] = 5 # not possible
+# numbers_set.remove(12)
+
+# for item in numbers_set:
+#     print(item)
+
+# if 23 in numbers_set:
+#     print('exists')
+
+# A = {1, 3, 5}
+# B = {1, 2, 3, 4, 5}
+# print(A & B) # A intersection B
+# print(A | B) # A union B
+
+
+""" DICTIONARY ======================================================================================= """
+# # key value pair
+# # dictionary
+# # object
+# # hash table
+# # overlap with set
+# #-----------------------------------------------------------
+# # numbers = [12, 43, 65, 85, 97, 34, 25, 75, 67]
+# # person1 = ['kala chan', 'kalipur', 23, 'student'] # every person er jonno aladavabe key  mone rakha koshtokor
+
+# # solution: 
+# person = {'name': 'Kala Pakhi', 'address': 'Kaliapur', 'age': '23', 'job': 'bekar'}
+# print(person)
+# print(person['job'])
+# print(person.keys())
+# print(person.values())
+# person['language'] = 'python'
+# person['name'] = 'sada pakhi'
+# del person['age']
+# print(person)
+
+# for item in person:
+#     print(item) # only key pabo, value pacchi na
+
+# # special dictionary looping
+# for key, value in person.items():
+#     print(key, value)
+
+""" LIST INDEX ===================================================================================== """
+# numbers = [12, 43, 65, 85, 97, 34, 25, 75, 67]
+# for num in numbers:
+#     print(num) # ai loop er maddhome index pai na. only value pai
+
+# # solution:
+# for i, num in enumerate(numbers):
+#     print(i, num) # akhn index, value 2tai paowa jabe
+
+""" BUILT IN MODULES =================================================================================="""
+# floor, ceil, gcd, common factor, infinity, sqrt, permutation, reminder, exponential, log, sin, cos, 
+# random, suffle, os, turtle, and so on...
+from math import *
+from random import * 
+from time import sleep
+result = ceil(4.6)
+print(result)
+print(random())
+print(randint(1, 100))
+sleep(4)
+print(choice(['sakib', 'mash', 'mush', 'rid', 'musta']))
+
+
+
