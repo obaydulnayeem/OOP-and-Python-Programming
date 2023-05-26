@@ -483,17 +483,110 @@ Alt + Shift + A --> multi line / doc string
 #     print(i, num) # akhn index, value 2tai paowa jabe
 
 """ BUILT IN MODULES =================================================================================="""
-# floor, ceil, gcd, common factor, infinity, sqrt, permutation, reminder, exponential, log, sin, cos, 
-# random, suffle, os, turtle, and so on...
-from math import *
-from random import * 
-from time import sleep
-result = ceil(4.6)
-print(result)
-print(random())
-print(randint(1, 100))
-sleep(4)
-print(choice(['sakib', 'mash', 'mush', 'rid', 'musta']))
+# # floor, ceil, gcd, common factor, infinity, sqrt, permutation, reminder, exponential, log, sin, cos, 
+# # random, suffle, os, turtle, and so on...
+# from math import *
+# from random import * 
+# from time import sleep
+# result = ceil(4.6)
+# print(result)
+# print(random())
+# print(randint(1, 100))
+# sleep(4)
+# print(choice(['sakib', 'mash', 'mush', 'rid', 'musta']))
 
+""" PACKAGES ================================================================================ """
+# # https://pypi.org/project/PyAutoGUI/
+# # https://pyautogui.readthedocs.io/en/latest/
+# # check: pip --version # eta python install korar somoy e aksathe hoye jay
 
+# # Popular packages: numpy, matplotlib, pytors, cykitlearn, beautiful soup, .... [banan e vul ache]
 
+# # AUTO TYPE ---------------------------------------------------------
+# # import pyautogui
+# # from time import sleep
+# # sleep(3)
+# # for i in range(0, 3):
+# #     pyautogui.write('Valo hoye ja. akhn o somoy ache', interval=0.25)
+# #     pyautogui.press('enter')
+
+# # CAM --------------------------------------------------------
+# import cv2
+# cam = cv2.VideoCapture(0) # ekhane 1, 2, 3, 4, ... etc deya lagte pare
+# while True: 
+#    _, frame = cam.read()
+#    cv2.imshow('my cam', frame)
+#    cv2.waitKey(1)
+
+""" EXCEPTIONS ================================================================================== """
+# https://docs.python.org/3/tutorial/errors.html
+
+"""
+    try: 
+        code...
+    except: # kichu language e catch use kore
+        code er moddhe kono kichute kaj na korle eta kaj korbe
+    finally: 
+         chaile etao try er sathe use kora jay.
+         or, try, except er satheo aksathe kora jay
+"""
+# try:    
+#     result = 45/0 # division by zero error
+# except:
+#     print('Error happended')
+# finally:
+#     print('finally here')
+
+""" FILE ========================================================================== """
+# .csv -> comma separated value
+# .txt -> text file
+
+# with open('message.txt', 'w') as file: # w -> write
+#     file.write('I love you, Python!')
+
+# with open('message.txt', 'a') as file: # a -> append -> jog kora
+#     file.write('I love you, Python!')
+
+# with open('message.txt', 'r') as file: # r -> read
+#     text = file.read()
+#     print(text)
+
+""" LAMBDA FUNCTION ============================================================== """
+# # def doubled(x):
+# #     return x*2
+
+# doubled = lambda num: num * 2 # uporer 2 line er poriborte evabe 1 line e lekha jay
+# squared = lambda num: num * num
+# add = lambda x, y : x + y
+
+# result1 = doubled(44)
+# result2 = squared(9)
+# result3 = add(4, 6)
+
+# print(result1, result2, result3)
+
+""" MAP ================================================================================ """
+# numbers = [12, 43, 65, 85, 97, 34, 25, 75, 67]
+# doubled = lambda num: num * 2
+# doubled_nums = map(doubled, numbers)
+# # doubled_nums = map(lambda x : x*2, numbers) # uporer line er poriborte evabeo lekha jabe
+# squared_nums = map(lambda x : x*x, numbers)
+
+# print(numbers)
+# print(list(doubled_nums))
+# print(list(squared_nums))
+
+# DICTIONARY, FILTER, LAMBDA together------------------------------------------------------------------------
+
+# actors = [
+#     {'name': 'sabana', 'age': 66},
+#     {'name': 'sabnur', 'age': 25},
+#     {'name': 'sabina nur', 'age': 35},
+#     {'name': 'srabonti', 'age': 40}
+# ]
+
+# juniors = filter(lambda actor : actor['age'] < 40, actors) # 'actor' er jaygay onno kono var use korleo hobe. jemon 'x'
+# print(list(juniors))
+
+# Fivers = filter(lambda actor : actor['age'] % 5 == 0, actors)
+# print(list(Fivers))
