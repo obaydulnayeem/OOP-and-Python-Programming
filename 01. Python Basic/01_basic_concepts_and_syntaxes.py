@@ -24,7 +24,7 @@
 # district = 'Barishal'
 # is_single = True
 # is_sleeping = False
-#print(age + a)
+# print(age + a)
 
 
 """ TYPE==================================================="""
@@ -590,3 +590,5 @@ Alt + Shift + A --> multi line / doc string
 
 # Fivers = filter(lambda actor : actor['age'] % 5 == 0, actors)
 # print(list(Fivers))
+
+"""  """
