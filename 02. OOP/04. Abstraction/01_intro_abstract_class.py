@@ -1,5 +1,5 @@
 """ 
-
+    jeshob class implement kortei hobe.
 """
 from abc import ABC, abstractmethod # abc -> abstract base class
 

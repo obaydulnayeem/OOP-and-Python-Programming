@@ -13,7 +13,7 @@
                 
 
         Pillers:
-            - inheritance
+            - inheritance 
             - encapsulation
             - polymorphism
             - abstruction
