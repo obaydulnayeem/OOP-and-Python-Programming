@@ -1,6 +1,6 @@
 """ 
 - static attribute (class attribute)
-- static method @staticmethod
+- static method @staticmethod  --> VVI 
 - class method @classmethod
 - static method vs class  method
 """

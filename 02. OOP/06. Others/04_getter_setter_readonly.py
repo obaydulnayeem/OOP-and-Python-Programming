@@ -13,6 +13,7 @@ class User:
         self.__money = money
 
     # getter without any setter is readonly attribute
+    # readonly: only property thakbe, r kono setter thakbe na.
     @property # decorator: akhn ai function ta attribute hishebe kaj korbe. r method thakbe na
     def age(self):
         return self._age

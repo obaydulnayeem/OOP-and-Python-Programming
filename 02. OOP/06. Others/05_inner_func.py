@@ -1,8 +1,9 @@
 # function is a first class object
 """ 
-- akta function er moddhe r o functio declare kora jay.
-- python e parameter hishebe jerokom number, string paowa jay, temni 'function' o pathano jay. 
-
+Inner Function:
+    - akta function er moddhe r o function declare kora jay.
+    - parameter hishebe jerokom number, string pathano jay, temni 'function' o pathano jay. 
+    - akta function er vitor theke onno function k call kora jabe
 """
 
 def double_decker():

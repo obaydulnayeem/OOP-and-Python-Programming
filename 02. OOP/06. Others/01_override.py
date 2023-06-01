@@ -1,4 +1,5 @@
-# parent class er method child class e korlei override
+# parent class er method child class e use korlei override
+# 
 
 class Person:
     def __init__(self, name, age, height, weight) -> None:

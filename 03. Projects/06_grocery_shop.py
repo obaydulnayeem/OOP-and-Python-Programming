@@ -7,7 +7,7 @@ class Product:
         self.product_id = product_id
         self.price = price
         self.expire_date = expired_date
-
+ 
     def __repr__(self):
         return f'Product Name: {self.product_name},\n Id: {self.product_id},\n Price: {self.price},\n Expired Date: {self.expire_date}'
     

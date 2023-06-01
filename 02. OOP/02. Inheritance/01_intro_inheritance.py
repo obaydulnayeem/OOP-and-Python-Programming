@@ -1,3 +1,8 @@
+"""  
+    - inheritance provides us 'is a relation'
+    - 
+"""
+
 # base class / parent class
 class BaseClass:
     pass
