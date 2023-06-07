@@ -215,4 +215,3 @@ while True:
                     b.available_buses()
                 elif a == 3:
                     b.show_ticket()
-

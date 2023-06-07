@@ -1,17 +1,10 @@
-n = int(input())
+N, M = map(int, input().split())
+numbers = list(map(int, input().split()))
 
-for j in range(n): 
-    a, b = map(int, input().split())
+frequency = [0] * (M + 1)
 
-    a = int(a)
-    b = int(b)
+for num in numbers:
+    frequency[num] += 1
 
-    _a = min(a, b) + 1
-    _b = max(a, b)
-    sum = 0
-
-    for i in range(_a, _b):
-        if i % 2 == 1:
-            sum = sum + i
-
-    print(sum)
+for i in range(1, M + 1):
+    print(frequency[i])
