@@ -1,3 +1,9 @@
+"""  
+multiple inheritance jotota avoide kora jay totoi valo. beshir vag programming 
+lang ei eta boro problem create kore. but python syntax easy howay ekhane problem 
+create na korleo confusion create kore. 
+"""
+
 class Family:
     def __init__(self, address) -> None:
         self.address = address
