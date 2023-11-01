@@ -35,20 +35,20 @@
 
 """ COMMENT===================================================="""
 """
-Ctrl + / --> single line
-Alt + Shift + A --> multi line / doc string
+Single Line: Ctrl + / 
+Multi Line / Doc String: Alt + Shift + A
 """
 
-""" STRING========================================================================================"""
+""" STRING======================================================="""
 # print('Kodom Ali' + ' ' + 'Kacha Badam')
 # text = f"Kodom Ali {age} living in {district}. Interesting with rate {interest_rate}%"  # fstring
 # print(text)
 
-#---------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------
 # name1 = 'Sakib\'s Khan' # escape -> \
 # name2 = "Sakib Khan"
-# # multiline string
-# name3 = """   
+# multiline string
+# name3 = """
 #     Sakib Khan
 #     Number One
 # """
@@ -57,10 +57,21 @@ Alt + Shift + A --> multi line / doc string
 # for char in name2:
 #     print(char)
 
-# print(name2[3])
-# print(name2[1:6])
-# print(name2[-3])
-# print(name2[::-1])
+# Assigning a string to the variable name2
+name = "HelloWorld"
+
+# 1. Print the character at index 3 in the string
+print(name[3])  # Output: 'l'
+
+# 2. Print the characters from index 1 (inclusive) to index 5 (exclusive) in the string
+print(name[1:6])  # Output: 'elloW'
+
+# 3. Print the character at the third position from the end of the string
+print(name[-3])  # Output: 'r'
+
+# 4. Print the string in reverse
+print(name2[::-1])  # Output: 'dlroWolleH'
+
 
 # name2[0] = 'R' # not possible
 
@@ -72,10 +83,12 @@ Alt + Shift + A --> multi line / doc string
 # mutable -> changeable
 # immutable -> we can not change it
 
-""" TOUPLE ============================================================================= """
+""" TOUPLE ========================================================== """
 # touble kichu 'list' er kachakachi
+
 # list er khetre generally same type data rakhe. jemon int er list, string er list, bool er list
     # but touple er khetre mix type er data rakhe.
+    
 # function theke ekadhik jinish return korte gele kaje lage.
 
 # def multiple():
@@ -98,7 +111,7 @@ Alt + Shift + A --> multi line / doc string
 
 
 
-""" INPUT==================================================================="""
+""" INPUT========================================================="""
 # print('Now I need money')
 # input()
 # input('Give me some money: ')
@@ -120,7 +133,7 @@ Alt + Shift + A --> multi line / doc string
 # a, b = map(int, input().split()) # input sample: 3 5
 
 
-""" OPERATORS====================================================================="""
+""" OPERATORS======================================================="""
 # +, -, *, /, %, //, **
 # num1 = 15
 # num2 = 6
@@ -156,7 +169,7 @@ Alt + Shift + A --> multi line / doc string
 #     print('lunch er pore ashen')
 
 
-""" NESTED CONDITIONS====================================================================="""
+""" NESTED CONDITIONS========================================="""
 # coin = 'head'
 # if boss == True:
 #     print('boss, you are xoss!')
@@ -249,7 +262,7 @@ Alt + Shift + A --> multi line / doc string
 # final = double_it(total)
 # print('final value', final)
 
-""" DEFAULT ARGS =========================================================================================="""
+""" DEFAULT ARGS ======================================="""
 # default parameter ---------------
 # def sum(num1, num2, num3 = 0): # num3 = 0 --> ai parameter er man na dileo kaj korbe
 #     result = num1 + num2 + num3
@@ -270,7 +283,7 @@ Alt + Shift + A --> multi line / doc string
 # print('all sum: ', total)
 
 
-""" KARGS ============================================================================""" 
+""" KARGS ===============================================================""" 
 # def full_name(first, last):
 #     name = f'Full name is: {first} {last}' # first + ' ' + last --> evabe dileo hobe
 #     return name
@@ -279,7 +292,7 @@ Alt + Shift + A --> multi line / doc string
 # name = full_name(last='kodu', first='alu') # taken parameters not in order (not serial wise)
 # print(name)
 
-#---------------------------------------------------------------------------------------------
+#---------------------------------------------------------------
 # def famous_name(first, last, **addition): # ** --> kargs --> key jukto args. 
 #     name = f'{first} {last}'
 #     # print(addition['title'])
@@ -293,7 +306,7 @@ Alt + Shift + A --> multi line / doc string
 # # So, def function_name(num1, num2, ..., *args, **kargs, ...)
 
 
-""" RETURN MULTIPLE THINGS============================================================================="""
+""" RETURN MULTIPLE THINGS===================================="""
 # def a_lot(num1, num2):
 #     sum = num1 + num2
 #     mult = num1 * num2
@@ -305,7 +318,7 @@ Alt + Shift + A --> multi line / doc string
 # print(everything)
 
 
-""" SCOPE ================================================================================================== """
+""" SCOPE =================================================== """
 # balance = 3000 # global scope variable
 
 # def buy_things(item, price):
@@ -318,7 +331,7 @@ Alt + Shift + A --> multi line / doc string
 
 # buy_things('sunglass', 1000)
 
-""" BUILT IN FUNCTIONS ============================================================ """
+""" BUILT IN FUNCTIONS ================================== """
 # # ALL: https://docs.python.org/3/library/functions.html
 
 # # Most used:
@@ -332,13 +345,13 @@ Alt + Shift + A --> multi line / doc string
 # count = len([34, 65])
 # print(highest, smallest, count)
 
-""" MODULES ======================================================================================== """
+""" MODULES ================================================= """
 # from external_file_name import * # to import all from the file
 # from external_file_name import function_name # to import only a function 
 # from external_file_name import function_name as new_function_name # to import a function as modified function name 
 
 
-""" LIST (array / collection) ======================================================================"""
+""" LIST (array / collection) ==============================="""
 # # https://docs.python.org/3/tutorial/datastructures.html
 
 # # index:    0   1     2   3    4    5    6    7    8    9   10   11   12   13 
@@ -361,7 +374,7 @@ Alt + Shift + A --> multi line / doc string
 # print(numbers[:]) # shuru theke shesh shob / copy a list
 # print(numbers[::-1]) # shesh theke shuru / reverse the full array
 
-""" more about LIST ======================================================================================"""
+""" more about LIST ==========================================="""
 # numbers = [12, 43, 65, 85]
 # numbers.append(56)
 # print(numbers)
@@ -389,7 +402,7 @@ Alt + Shift + A --> multi line / doc string
 # sorted = numbers.sort()
 # print(numbers)
 
-""" LIST comprehension / advanced =============================================================================="""
+""" LIST comprehension / advanced =============================="""
 # numbers = [45, 64, 26, 73, 85, 34, 74, 34, 23, 56]
 # odds = []
 # for num in numbers:
@@ -401,7 +414,7 @@ Alt + Shift + A --> multi line / doc string
 # odd_nums = [num for num in numbers if num % 2 == 1 if num % 5 == 0]
 # print(odd_nums)
 
-#------------------------------------------------------------------------
+#---------------------------------------------
 # players = ['sakib', 'musfik', 'mustafiz']
 # ages = [34, 35, 36]
 
@@ -416,7 +429,7 @@ Alt + Shift + A --> multi line / doc string
 # age_comb2 = [[player, age] for player in players for age in ages]
 # print(age_comb2)
 
-""" SET ================================================================================================= """
+""" SET ====================================================== """
 # set: unique items collection
 
 # list --> []
@@ -445,7 +458,7 @@ Alt + Shift + A --> multi line / doc string
 # print(A | B) # A union B
 
 
-""" DICTIONARY ======================================================================================= """
+""" DICTIONARY =============================================== """
 # # key value pair
 # # dictionary
 # # object
@@ -473,7 +486,7 @@ Alt + Shift + A --> multi line / doc string
 # for key, value in person.items():
 #     print(key, value)
 
-""" LIST INDEX ===================================================================================== """
+""" LIST INDEX =============================================== """
 # numbers = [12, 43, 65, 85, 97, 34, 25, 75, 67]
 # for num in numbers:
 #     print(num) # ai loop er maddhome index pai na. only value pai
@@ -482,7 +495,7 @@ Alt + Shift + A --> multi line / doc string
 # for i, num in enumerate(numbers):
 #     print(i, num) # akhn index, value 2tai paowa jabe
 
-""" BUILT IN MODULES =================================================================================="""
+""" BUILT IN MODULES =========================================="""
 # # floor, ceil, gcd, common factor, infinity, sqrt, permutation, reminder, exponential, log, sin, cos, 
 # # random, suffle, os, turtle, and so on...
 # from math import *
@@ -495,7 +508,7 @@ Alt + Shift + A --> multi line / doc string
 # sleep(4)
 # print(choice(['sakib', 'mash', 'mush', 'rid', 'musta']))
 
-""" PACKAGES ================================================================================ """
+""" PACKAGES ============================================= """
 # # https://pypi.org/project/PyAutoGUI/
 # # https://pyautogui.readthedocs.io/en/latest/
 # # check: pip --version # eta python install korar somoy e aksathe hoye jay
@@ -518,7 +531,7 @@ Alt + Shift + A --> multi line / doc string
 #    cv2.imshow('my cam', frame)
 #    cv2.waitKey(1)
 
-""" EXCEPTIONS ================================================================================== """
+""" EXCEPTIONS =========================================== """
 # https://docs.python.org/3/tutorial/errors.html
 
 """
@@ -537,7 +550,7 @@ Alt + Shift + A --> multi line / doc string
 # finally:
 #     print('finally here')
 
-""" FILE ========================================================================== """
+""" FILE ======================================== """
 # .csv -> comma separated value
 # .txt -> text file
 
@@ -551,7 +564,7 @@ Alt + Shift + A --> multi line / doc string
 #     text = file.read()
 #     print(text)
 
-""" LAMBDA FUNCTION ============================================================== """
+""" LAMBDA FUNCTION ======================================= """
 # # def doubled(x):
 # #     return x*2
 
@@ -565,7 +578,7 @@ Alt + Shift + A --> multi line / doc string
 
 # print(result1, result2, result3)
 
-""" MAP ================================================================================ """
+""" MAP =================================================== """
 # numbers = [12, 43, 65, 85, 97, 34, 25, 75, 67]
 # doubled = lambda num: num * 2
 # doubled_nums = map(doubled, numbers)
@@ -576,7 +589,7 @@ Alt + Shift + A --> multi line / doc string
 # print(list(doubled_nums))
 # print(list(squared_nums))
 
-# DICTIONARY, FILTER, LAMBDA together------------------------------------------------------------------------
+# DICTIONARY, FILTER, LAMBDA together----------------------------
 
 # actors = [
 #     {'name': 'sabana', 'age': 66},
@@ -591,4 +604,4 @@ Alt + Shift + A --> multi line / doc string
 # Fivers = filter(lambda actor : actor['age'] % 5 == 0, actors)
 # print(list(Fivers))
 
-"""  """
+""" THE END """
